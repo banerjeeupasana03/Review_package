@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+
 import {
   TextInput
 } from 'react-native';
@@ -26,7 +28,7 @@ function Bot() {
   );
   <Button
           title="Send"
-          onPress={() => Alert.alert('You sent:')}
+          onPress={() => Alert.alert('You sent:{value}')}
         />
 }
 export default Bot;
